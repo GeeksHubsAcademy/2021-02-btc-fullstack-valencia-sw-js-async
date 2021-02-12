@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hola Mundo</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hola Mundo</title>
+  </head>
 <body>
 </body>
 
 
-<h1 id="id01">Respuesta de Chuck:</h1>
+  <h1 id="id01">Respuesta de Chuck:</h1>
 
-<div id = "data"></div> 
+  <div id = "data"></div> 
 
-
-<script>
- //devuelve todos los campos del JSON 
-fetch('https://api.chucknorris.io/jokes/categories')
-  .then(response => response.json())
-  .then(console.log);
-
-//devuelve el valor de un campo del JSON
-fetch('https://api.chucknorris.io/jokes/categories')
-  .then(response => response.json())
-  .then(categories=>console.log(categories[5]));
-
-//devuelve todos los registros en un unico JSON
-fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
-  .then(response => response.json())
-  .then(commits => console.log(commits[0]));
-
-//devuelve un unico registro
-fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
-  .then(response => response.json())
-  .then(commits => console.log(commits[0].commit.message));
-
-</script>
+  <script src="js/funtion.js"></script>
 
 </html>
